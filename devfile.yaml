@@ -46,3 +46,12 @@ commands:
       commandLine: "npm install; npm start"
       group:
         kind: run
+  - id: 4-test
+    exec:
+      label: "Run the web app (and download dependencies)"
+      component: tools
+      workingDir: ${PROJECTS_ROOT}/dotnet-devspace
+      commandLine: "npm test"
+      group:
+        kind: test
+
