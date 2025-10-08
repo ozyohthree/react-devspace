@@ -21,6 +21,9 @@ components:
   - name: npm
     volume:
       size: 1G
+events:
+  preStart:
+    - 5-install-tools      
 commands:
   - id: 1-dependencies
     exec:
@@ -54,4 +57,10 @@ commands:
       commandLine: "npm test"
       group:
         kind: test
+  - id: 5-install-tools
+    exec:
+      label: "Install additional tools"
+      component: tools
+      workingDir: /projects/react-devspace
+      commandLine: "yes | npm init playwright@latest"
 
