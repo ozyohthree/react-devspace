@@ -20,11 +20,14 @@ components:
           path: /home/user/.npm
   - name: npm
     volume:
-      size: 1G
-events:
-  preStart:
-    - 5-install-tools      
+      size: 1G    
 commands:
+  - id: 0-install-tools
+    exec:
+      label: "Install additional tools"
+      component: tools
+      workingDir: /projects/react-devspace
+      commandLine: "yes | npm init playwright@latest"
   - id: 1-dependencies
     exec:
       label: "Download dependencies"
@@ -57,10 +60,8 @@ commands:
       commandLine: "npm test"
       group:
         kind: test
-  - id: 5-install-tools
-    exec:
-      label: "Install additional tools"
-      component: tools
-      workingDir: /projects/react-devspace
-      commandLine: "yes | npm init playwright@latest"
+events:
+  preStart:
+      - 0-install-tools  
+
 
