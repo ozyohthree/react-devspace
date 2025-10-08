@@ -27,7 +27,7 @@ commands:
       label: "Install additional tools"
       component: tools
       workingDir: /projects/react-devspace
-      commandLine: "yes | npm init playwright@latest"
+      commandLine: "npm init playwright@latest"
       group:
         kind: run
         isDefault: true
