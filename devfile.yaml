@@ -28,6 +28,9 @@ commands:
       component: tools
       workingDir: /projects/react-devspace
       commandLine: "yes | npm init playwright@latest"
+      group:
+        kind: run
+        isDefault: true
   - id: 1-dependencies
     exec:
       label: "Download dependencies"
@@ -60,8 +63,5 @@ commands:
       commandLine: "npm test"
       group:
         kind: test
-events:
-  preStart:
-      - 0-install-tools  
 
 
