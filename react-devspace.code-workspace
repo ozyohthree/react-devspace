@@ -12,7 +12,7 @@
 			"eamodio.gitlens",
 			"streetsidesoftware.code-spell-checker",
 			"cnshenj.vscode-task-manager",
-			"ms-playwright/playwright"
+			"ms-playwright.playwright"
 		]
 	},
 	"settings": {
