@@ -25,8 +25,13 @@
     	"editor.fontSize": 14,
 		"debug.console.fontSize": 14,
 		"cSpell.words": [
+			"cnshenj",
+			"dbaeumer",
 			"devspace",
 			"devspaces",
+			"eamodio",
+			"esbenp",
+			"mhutchie",
 			"reactjs"
 		]
 	}
