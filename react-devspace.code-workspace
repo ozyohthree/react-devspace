@@ -23,6 +23,11 @@
 		"files.autoSave": "afterDelay",
 		"terminal.integrated.fontSize": 14,
     	"editor.fontSize": 14,
-    	"debug.console.fontSize": 14
+		"debug.console.fontSize": 14,
+		"cSpell.words": [
+			"devspace",
+			"devspaces",
+			"reactjs"
+		]
 	}
 }
