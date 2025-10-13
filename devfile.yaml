@@ -22,14 +22,6 @@ components:
     volume:
       size: 1G    
 commands:
-  - id: 0-install-tools
-    exec:
-      label: "Install additional tools"
-      component: tools
-      workingDir: /projects/react-devspace
-      commandLine: "npm init playwright@latest"
-      group:
-        kind: run
   - id: 1-dependencies
     exec:
       label: "Download dependencies"
